@@ -1,35 +1,27 @@
 ---
 title: "Hello, World!"
-date: "2024-03-20"
-author: systems-research-team
+date: "2026-07-25"
+author: syed-taha
 category: "Announcements"
 tags: ["Announcements"]
-excerpt: "Welcome to the Systems Research blog. We explore operating systems, processor architecture, and systems programming."
-coverImage: "/content-images/hello-world-cover.webp"
+excerpt: "Who we are, and the kind of hands-on systems work you'll find on this blog."
 status: published
 ---
 
-Hello, and welcome to the Systems Research blog at IBA. This is our space to share insights, discoveries, and detailed technical explorations into the world of systems design and implementation.
+We're the Systems Research group at IBA: a handful of students and faculty who'd rather build the thing than just read about it. This blog is where we write about what we're building.
 
-![Systems Research @ IBA cover graphic](/content-images/hello-world-cover.webp)
+## What "systems" means here
 
-## What we explore
+Systems research sits at the layer most software never has to think about: how an operating system schedules work, how a processor actually executes an instruction, how a cluster of machines agrees on anything at all. It's less glamorous than the applications built on top of it, and that's exactly why it's interesting. Every one of those applications is quietly depending on choices made down here.
 
-Our research group focuses on several core areas:
+## How we actually work
 
-- **Operating Systems**: adapting kernel-level scheduling, memory management, and I/O to support the resource demands of modern machine learning workloads, particularly on minimal or constrained operating systems.
-- **Distributed Systems**: distributing model inference across clusters of resource-constrained devices, including sharding strategy, fault tolerance, and communication-efficient coordination between nodes.
-- **Architecture**: mapping neural network computation onto open instruction set architectures, with an emphasis on vectorized execution and hardware-software co-design for edge and embedded targets.
-- **Machine Learning Systems**: investigating how compact a model architecture can be made without sacrificing performance, through architecture search, knowledge distillation, and quantization aimed at constrained hardware.
+A lot of what ends up on this blog starts as a class assignment. A circuit designed for a digital logic course, a kernel feature written for an operating systems course, a scheduling model sketched out for a class project: the kind of thing that's normally due, graded, and forgotten. Ours tend not to stay that way. An assignment turns into a question nobody in the room can quite answer, and the question turns into the actual project.
 
-## Why systems matter
+That's produced work spanning operating systems, computer architecture, and distributed and parallel computing, usually with more than one of those overlapping in the same piece of work. We build things that don't fully work yet, measure things that turn out to matter less than we assumed, and occasionally find that the "obvious" solution to a problem doesn't exist at all.
 
-Systems research forms the foundation of all computing. By understanding how operating systems schedule tasks, how processors execute instructions, and how distributed systems coordinate across networks, we can build faster, more reliable, and more efficient applications.
+## What to expect here
 
-Every breakthrough in systems research has ripple effects across the entire computing industry.
+Posts here are technical, specific, and written by whoever actually did the work, not a summary of it written after the fact. Some will describe something finished. Some will describe something still in progress, or something that didn't pan out and why. If that's the kind of writing you're looking for, you're in the right place.
 
-### A note on how we publish
-
-This blog is written and reviewed the same way we write code: posts live as Markdown in a Git repository, not a web form. If you're a member of the group, the workflow is: fork this repo, write the post, open a pull request, get it reviewed, merge. See this repo's README for the details.
-
-Happy exploring!
+Want to write one yourself? See [Writing for the Blog](/blog/writing-for-the-blog) for how to get started.
