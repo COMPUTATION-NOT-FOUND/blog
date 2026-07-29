@@ -104,7 +104,7 @@ int main() {
 }
 ```
 
-> There's no syntax highlighting yet, so the language tag doesn't change the color of anything today, but it's worth including anyway since it documents the language for readers and will start being used the moment highlighting is added. Keep examples short and representative of the point you're making rather than pasting an entire file; a reader should be able to see what matters at a glance.
+> The language tag (`cpp` above) drives syntax highlighting, so always include it. Keep examples short and representative of the point you're making rather than pasting an entire file; a reader should be able to see what matters at a glance.
 
 You can also add quotes, as shown above using `>`.
 
