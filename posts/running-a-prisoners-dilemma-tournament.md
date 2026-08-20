@@ -31,15 +31,16 @@ The third is the interesting one. Once computation lives on the student's machin
 You need Python 3.10 or newer. Everything installs into a virtual environment so the app's packages stay off the rest of your system.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/COMPUTATION-NOT-FOUND/ipd-app.git
 cd ipd-app
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python app.py
-```
 
-On Windows that middle section is `py -m venv .venv` and `.\.venv\Scripts\Activate.ps1`, and if `python app.py` hangs, use `waitress-serve app:app` instead. On a fresh Ubuntu install you may need `sudo apt install -y python3-venv python3-pip` first.
+# On a fresh Ubuntu/Debian box, first: sudo apt install -y python3-venv python3-pip
+
+python3 -m venv .venv           # Windows: py -m venv .venv
+source .venv/bin/activate       # Windows: .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python app.py                   # Windows, if this hangs: waitress-serve app:app
+```
 
 Open `http://127.0.0.1:5000` and the app is running. There is no account, no database, and no configuration at this point. That is deliberate: the thing you have to do before you can write your first strategy should be as close to nothing as possible.
 
